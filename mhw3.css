@@ -1,0 +1,236 @@
+.button a {
+    padding: 10px 15px;
+    border: 2px solid black;
+    border-radius: 100px;
+  }
+ 
+  
+  a:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  .button,
+  header h1 strong,
+  #links {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  header {
+    color: antiquewhite;
+    background-image: url("copertina_collage.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2px;
+    font-family: "Lora", Verdana;
+  }
+  
+  header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  header h1 {
+    font-weight: normal;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  header h1 strong {
+    font-size: 2em;
+    letter-spacing: 4px;
+  }
+
+  @media (max-width: 500px) {
+    header h1 strong {
+      font-size: 0.8em;
+    }
+  }
+
+  nav {
+    background-color: lightgrey;
+    font-size: 14px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+  }
+
+  
+@media (max-width: 500px) {
+    nav {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 5px 0;
+    }
+  }
+
+  #links a {
+    margin: 15px;
+  }
+
+  @media (max-width: 500px) {
+    #links {
+      display: none;
+    }
+  }
+  
+  #main h1 {
+    margin-bottom: 40px;
+    padding-top: 30px;
+  }
+
+  @media (max-width: 500px) {
+    #main h1 {
+      font-size: 1em;
+    }
+  }
+
+  @media (max-width: 500px) {
+    #menu div {
+      width: 25px;
+      height: 3px;
+      background-color: black;
+      margin: 5px 0;
+    }
+  
+    #menu {
+      display: block;
+    }
+  }
+
+  section {
+    color: rgba(26, 26, 26, 0.7);
+    font-family: "Lora", serif;
+    text-align: center;
+    background-color: rgb(226, 226, 226);
+    margin-top: 2px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section h1 {
+    margin-bottom: 20px;
+  }
+  
+  .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3px;
+  }
+  
+  .details div {
+    width: calc(50% - 20px);
+  }
+
+  .details img {
+    width: 60%;
+    height: 60%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 5px solid grey;
+  }
+  
+  .details h1 {
+    font-family: Arial;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  .details p {
+    line-height: 20px;
+    margin-bottom: 80px;
+    text-align: justify;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  @media (max-width: 500px) {
+    .details div {
+      width: 60%;
+    }
+  
+    .details img {
+      width: 60%;
+      height: 60%;
+    }
+  
+    .details h1 {
+      font-size: 0.8em;
+    }
+  
+    .details p {
+      font-size: 0.9em;
+    }
+  }
+  
+  footer {
+    background-color: black;
+    padding: 50px;
+  }
+
+  footer p {
+    font-family: "Roboto", "Times New Roman";
+    font-style: italic;
+    font-size: large;
+    font-weight: bold;
+    color: lightgrey;
+    text-align: center;
+  }
+  
+#ris_ricerca,
+#ris_ricerca_album {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+#ris_ricerca img,
+#ris_ricerca_album img {
+  max-width: 100%;
+}
+
+#ris_ricerca .film,
+#ris_ricerca_album .album {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  border: 1px solid slategray;
+  margin: 10px;
+}
+
+#form_film,
+#form_album {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 50px;
+  margin-top: 5px;
+  align-content: center;
+  background-color: rgb(235, 234, 234);
+}
+
